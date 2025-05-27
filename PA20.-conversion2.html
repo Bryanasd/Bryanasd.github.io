@@ -1,0 +1,31 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> yardas a pulgadas</title>
+    <link rel="stylesheet" href="PA20.-conversion2.css">
+</head>
+<body>
+    <div id="conejo_1">
+        <center>
+            INTRODUCE UN NUMERO EN YARDAS :
+            <input type="text" id="yd" name="yd">
+            <br><br><br>
+            <input type="button" style="background-color: darkturquoise;" id="c" name="c" value="CONVERSION" onclick="pulga()">
+            <br><br><br>
+            PULGADAS:
+            <input type="text" name="p" id="p">
+        </center>
+        <br><br><br><br><br><br><br><br><br>
+        <center><a href="PA20.-menu_de_conversiones.html" ><input type="button" style="background-color: darkturquoise;" id="hola" name="hola" value="REGRESAR" ></a></center>
+    </div>
+    <script>
+        function pulga()
+        {
+            var p1 = document.getElementById('yd').value;
+            var yap= parseFloat (p1) * 36;
+            document.getElementById('p').value =yap;
+             
+        }
+    </script>
+</body>
+</html>

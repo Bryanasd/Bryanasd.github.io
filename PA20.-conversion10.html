@@ -1,0 +1,30 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>libras a onzas</title>
+    <link rel="stylesheet" href="PA20.-conversion10.css">
+</head>
+<body>
+    <div id="chetitos_1">
+        <center>
+            INTRODUCE UNA CANTIDAD EN LIBRAS :
+            <input type="text" id="time" name="time">
+            <br><br><br>
+            <input type="button" style="background-color: pink;" id="holiwise" name="holiwise" value="CONVERSION" onclick="chetos()">
+            <br><br><br>
+            ONZAS
+            <input type="text" id="LA" name="LA">
+        </center>
+        <br><br><br><br><br><br><br><br><br>
+        <center><a href="PA20.-menu_de_conversiones.html" ><input type="button" style="background-color: pink;" id="hola" name="hola" value="REGRESAR" ></a></center>
+    </div>
+    <script>
+        function chetos()
+        {
+            var C1 = document.getElementById('time').value;
+            var LAO =parseFloat(C1)  * 16
+            document.getElementById('LA').value = LAO;
+        } 
+    </script>
+</body>
+</html>

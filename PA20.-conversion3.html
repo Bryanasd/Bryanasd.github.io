@@ -1,0 +1,31 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pies a millas</title>
+    <link rel="stylesheet" href="PA20.-conversion3.css">
+</head>
+<body>
+    <div id="caballito_1">
+        <center>
+            INTRODUCE UN NUMERO EN PIES :
+            <input type="text" id="pulpo" name="pulpo">
+            <br><br><br>
+            <input type="button" style="background-color: lightblue;" id="chicle" name="chicle" value="CONVERSION" onclick="pulguiento()">
+            <br><br><br>
+            MILLAS:
+            <input type="text" name="pata" id="pata">
+        </center>
+        <br><br><br><br><br><br><br><br><br>
+        <center><a href="PA20.-menu_de_conversiones.html" ><input type="button" style="background-color: lightblue;" id="hola" name="hola" value="REGRESAR" ></a></center>
+    </div>
+    <script>
+        function pulguiento()
+        {
+            var r1 = document.getElementById('pulpo').value;
+            var pam= parseFloat (r1) / 5280
+            document.getElementById('pata').value =pam;
+             
+        }
+    </script>
+</body>
+</html>

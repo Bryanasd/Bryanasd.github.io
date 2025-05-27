@@ -1,0 +1,30 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> Toneladas a kilogramos</title>
+    <link rel="stylesheet" href="PA20.-conversion8.css">
+</head>
+<body>
+    <div id="lagartija_1">
+        <center>
+            INTRODUCE UNA CANTIDAD EN TONELADAS :
+            <input type="text" id="maruchan" name="maruchan">
+            <br><br><br>
+            <input type="button" style="background-color: orange;" id="capzu" name="capzu" value="CONVERSION" onclick="palomita()">
+            <br><br><br>
+            KILOGRAMOS
+            <input type="text" id="calcetines" name="calcetines">
+        </center>
+        <br><br><br><br><br><br><br><br><br>
+        <center><a href="PA20.-menu_de_conversiones.html" ><input type="button" style="background-color: orange;" id="hola" name="hola" value="REGRESAR" ></a></center>
+    </div>
+    <script>
+        function palomita()
+        {
+            var a1 = document.getElementById('maruchan').value;
+            var tak =parseFloat(a1)  * 1000
+            document.getElementById('calcetines').value = tak;
+        } 
+    </script>
+</body>
+</html>

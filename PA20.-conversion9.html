@@ -1,0 +1,30 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> Onzas a gramos</title>
+    <link rel="stylesheet" href="PA20.-conversion9.css">
+</head>
+<body>
+    <div id="drew_1">
+        <center>
+            INTRODUCE UNA CANTIDAD EN ONZAS:
+            <input type="text" id="tin" name="tin">
+            <br><br><br>
+            <input type="button" style="background-color: violet;" id="holas" name="holas" value="CONVERSION" onclick="caracol()">
+            <br><br><br>
+            GRAMOS
+            <input type="text" id="zz" name="zz">
+        </center>
+        <br><br><br><br><br><br><br><br><br>
+        <center><a href="PA20.-menu_de_conversiones.html" ><input type="button" style="background-color: violet;" id="hola" name="hola" value="REGRESAR" ></a></center>
+    </div>
+    <script>
+        function caracol()
+        {
+            var b1 = document.getElementById('tin').value;
+            var oag =parseFloat(b1)  * 28.3495
+            document.getElementById('zz').value = oag;
+        } 
+    </script>
+</body>
+</html>

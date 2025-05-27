@@ -1,0 +1,32 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Decimeros a pulgadas</title>
+    <link rel="stylesheet" href="PA20.-conversion5.css">
+</head>
+<body>
+    <div id="KURT_PAPAS">
+        <center>
+            INTRODUCE UNA CANTIDAD EN DECIMETROS :
+            <input type="text" id="de" name="de">
+            <br><br><br>
+            <input type="button" style="background-color: cadetblue;" id="coca" name="coca" value="CONVERSION" onclick="pollito()">
+            <br><br><br>
+            PULGADAS
+            <input type="text" id="cocacola" name="cocacola">
+        </center>
+        <br><br><br><br><br><br><br><br><br>
+        <center><a href="PA20.-menu_de_conversiones.html" ><input type="button" style="background-color: cadetblue;" id="hola" name="hola" value="REGRESAR" ></a></center>
+    </div>
+    <script>
+        function pollito()
+        {
+            var c1 = document.getElementById('de').value;
+            var dap =parseFloat(c1) * 3.93700787
+            document.getElementById('cocacola').value = dap;
+        }
+            
+        
+    </script>
+</body>
+</html>

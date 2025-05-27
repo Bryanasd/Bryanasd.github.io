@@ -1,0 +1,30 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>kilogramos a gramos</title>
+    <link rel="stylesheet" href="PA20.-conversion7.css">
+</head>
+<body>
+    <div id="lapicito_1">
+        <center>
+            INTRODUCE UNA CANTIDAD EN KILOGRAMOS :
+            <input type="text" id="maracuya" name="maracuya">
+            <br><br><br>
+            <input type="button" style="background-color: beige;" id="melocoton" name="melocoton" value="CONVERSION" onclick="puerquito()">
+            <br><br><br>
+            GRAMOS
+            <input type="text" id="pizza" name="pizza">
+        </center>
+        <br><br><br><br><br><br><br><br><br>
+        <center><a href="PA20.-menu_de_conversiones.html" ><input type="button" style="background-color: beige;" id="hola" name="hola" value="REGRESAR" ></a></center>
+    </div>
+    <script>
+        function puerquito()
+        {
+            var micho = document.getElementById('maracuya').value;
+            var kag =parseFloat(micho)  * 1000
+            document.getElementById('pizza').value = kag;
+        } 
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> conversion de centimetros a metros</title>
+    <link rel="stylesheet" href="PA20.-conversion1.css">
+</head>
+<body>
+    <div id="ja_ja">
+        <center>
+            INTRODUCE UN NUMERO EN CENTIMETROS:
+            <input type="text" id="cm" name="cm">
+            <br><br>
+            <input type="button" style="background-color: skyblue;"   id="m1" name="m1" value="CONVERSION" onclick="cm()"></a>
+            <br><br><br>
+            METROS :
+            <input type="text" id="r" name="r">
+        </center>
+        <br><br><br><br><br><br><br><br><br>
+        <center><a href="PA20.-menu_de_conversiones.html" ><input type="button" style="background-color: lightskyblue;" id="hola" name="hola" value="REGRESAR" ></a></center>
+    </div>
+    <script> 
+        function cm()
+        {
+            var c1 = document.getElementById('cm').value;
+            var m = parseFloat(c1) / 100;
+            document.getElementById('r').value = m;
+        }
+    </script>
+</body>
+</html>

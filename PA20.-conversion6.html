@@ -1,0 +1,30 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> miligramos a gramos</title>
+    <link rel="stylesheet" href="PA20.-conversion6.css">
+</head>
+<body>
+    <div id="nirvana_1">
+        <center>
+            INTRODUCE UNA CANTIDAD EN MILIGRAMOS :
+            <input type="text" id="pato" name="pato">
+            <br><br><br>
+            <input type="button" style="background-color: pink;" id="pato1" name="pato1" value="CONVERSION" onclick="capybara()">
+            <br><br><br>
+            GRAAMOS
+            <input type="text" id="pato2" name="pato2">
+        </center>
+        <br><br><br><br><br><br><br><br><br>
+        <center><a href="PA20.-menu_de_conversiones.html" ><input type="button" style="background-color: pink;" id="hola" name="hola" value="REGRESAR" ></a></center>
+    </div>
+    <script>
+        function capybara()
+        {
+            var coca = document.getElementById('pato').value;
+            var mag =parseFloat(coca) / 1000
+            document.getElementById('pato2').value = mag;
+        } 
+    </script>
+</body>
+</html>

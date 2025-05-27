@@ -1,0 +1,32 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Kilometros a pies</title>
+    <link rel="stylesheet" href="PA20.-conversion4.css">
+</head>
+<body>
+    <div id="florecilla_1">
+        <center>
+            INTRODUCE UNA CANTIDAD EN KILOMETROS :
+            <input type="text" id="ki" name="ki">
+            <br><br><br>
+            <input type="button" style="background-color: gray;" id="a1" name="a1" value="CONVERSION" onclick="moñito()">
+            <br><br><br>
+            PIES
+            <input type="text" id="id" name="id">
+        </center>
+        <br><br><br><br><br><br><br><br><br>
+        <center><a href="PA20.-menu_de_conversiones.html" ><input type="button" style="background-color: gray;" id="hola" name="hola" value="REGRESAR" ></a></center>
+    </div>
+    <script>
+        function moñito()
+        {
+            var s1 = document.getElementById('ki').value;
+            var kap =parseFloat(s1) * 3280.84
+            document.getElementById('id').value = kap;
+        }
+            
+        
+    </script>
+</body>
+</html>
